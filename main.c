@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
             charToMorse(input[i]);
         }
     } else if(choix == 2) {
-        input[strlen(input)] = " "; 
+        input[strlen(input)] = ' ';
         morseToChar(input);
     }
     return 0;
