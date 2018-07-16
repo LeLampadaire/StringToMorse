@@ -84,8 +84,6 @@ int morseToChar(char input[])
 
     while (pch != NULL)
     {
-        pch = strtok(NULL, " ");
-        
         if (strcmp(pch, ".-") == 0) {
             printf("a");
         } else if (strcmp(pch, "-...") == 0) {
@@ -126,7 +124,7 @@ int morseToChar(char input[])
             printf("s");
         } else if (strcmp(pch, "-") == 0) {
             printf("t");
-        } else if (strcmp(pch, "..-") == 0) {
+        } else if (strcmp(pch, "..--") == 0) {
             printf("u");
         } else if (strcmp(pch, "...-") == 0) {
             printf("v");
@@ -160,7 +158,7 @@ int morseToChar(char input[])
             printf("0");
         } 
         
-        
+        pch = strtok(NULL, " ");
     }
     return 0;
 
